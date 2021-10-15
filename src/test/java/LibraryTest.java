@@ -1,8 +1,5 @@
 import com.softwareinstitute.training.kptsang.*;
 import org.junit.Test;
-
-import com.softwareinstitute.training.kptsang.*;
-import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class LibraryTest {
