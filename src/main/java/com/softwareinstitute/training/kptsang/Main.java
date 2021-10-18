@@ -4,7 +4,7 @@ public class Main{
 
     public static void main(String[] args){
         ArrayList<Fiction> FictionLibrary =new ArrayList<>();
-        //ArrayList<NonFiction> NonFictionLibrary = new ArrayList<>();
+        ArrayList<NonFiction> NonFictionLibrary = new ArrayList<>();
 
         com.softwareinstitute.training.kptsang.Fiction fiction = new com.softwareinstitute.training.kptsang.Fiction("Nineteen Eighty Four", "George Orwell", 328, "Dystopian");
         System.out.println("Title: "+ fiction.getName() +", written by " + fiction.getAuthor()+", "+fiction.getPages()+" pages, and this book is "+ fiction.getGenre());
@@ -26,6 +26,7 @@ public class Main{
 
 
         FictionLibrary.add(fiction);
+        NonFictionLibrary.add(nonfiction);
 
 
     }

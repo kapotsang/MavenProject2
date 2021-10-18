@@ -15,7 +15,7 @@ public class LibraryTest {
         String genre = "Dystopian";
         Fiction testFiction = new Fiction("Nineteen Eighty Four", "George Orwell", 328, "Dystopian");
         testFiction.setGenre("Dystopian");
-        assertEquals(testFiction.getGenre(), genre);
+        assertEquals("this isn't the right genre", testFiction.getGenre(), genre);
     }
 
     @Test
