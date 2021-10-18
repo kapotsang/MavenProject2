@@ -15,17 +15,16 @@ public class Main{
         com.softwareinstitute.training.kptsang.NonFiction nonfiction = new com.softwareinstitute.training.kptsang.NonFiction("LEGO Star Wars Visual Dictionary", "DK", 160, "Lego");
         System.out.println("Title: "+ nonfiction.getName() +", written by "+ nonfiction.getAuthor()+ ", " + nonfiction.getPages()+ " pages, this book is about " +nonfiction.getTopic());
 
-        com.softwareinstitute.training.kptsang.Movie movie = new com.softwareinstitute.training.kptsang.Movie("Kill Bill", 2, "Quentin Tarantino", 215, 2004);
-        System.out.println("Title: "+ movie.getName()+", released "+ movie.getReleaseYear()+", directed by "+movie.getDirector()+", "+ movie.getNoOfDiscs()+" disc(s), runs for "+movie.getRuntime()+ " minutes");
+       // com.softwareinstitute.training.kptsang.Movie movie = new com.softwareinstitute.training.kptsang.Movie("Kill Bill", 2, "Quentin Tarantino", 215, 2004);
+       // System.out.println("Title: "+ movie.getName()+", released "+ movie.getReleaseYear()+", directed by "+movie.getDirector()+", "+ movie.getNoOfDiscs()+" disc(s), runs for "+movie.getRuntime()+ " minutes");
 
         //com.softwareinstitute.training.kptsang.Movie movie1 = new com.softwareinstitute.training.kptsang.Movie("The Lighthouse", 1, "Robert Eggers", 110, 2019);
         //System.out.println("Title: "+ movie1.getName()+", released "+ movie1.getReleaseYear()+", directed by "+movie1.getDirector()+", "+ movie1.getNoOfDiscs()+" disc(s), runs for "+movie1.getRuntime()+ " minutes");
 
-        com.softwareinstitute.training.kptsang.TVShow tvshow = new com.softwareinstitute.training.kptsang.TVShow("Seinfeld", 8,180, "Jerry Seinfeld");
-        System.out.println("Title: "+tvshow.getName()+", starring "+tvshow.getStarring()+", "+tvshow.getNoOfDiscs()+" disc boxset, "+tvshow.getNumberOfEpisodes1()+ " episodes");
+        //com.softwareinstitute.training.kptsang.TVShow tvshow = new com.softwareinstitute.training.kptsang.TVShow("Seinfeld", 8,180, "Jerry Seinfeld");
+        //System.out.println("Title: "+tvshow.getName()+", starring "+tvshow.getStarring()+", "+tvshow.getNoOfDiscs()+" disc boxset, "+tvshow.getNumberOfEpisodes1()+ " episodes");
 
 
-        //FictionLibrary.add(fiction1);
         FictionLibrary.add(fiction);
 
 
