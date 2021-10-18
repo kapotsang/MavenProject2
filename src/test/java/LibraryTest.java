@@ -62,5 +62,17 @@ public class LibraryTest {
         assertEquals("This person isn't in this series", "Jerry Seinfeld", testTVShow.getStarring());
     }
 
-}
+    @Test
+    public void testBorrow(){
+        Availability testAvailability = new Availability() {
+            @Override
+            public void borrow() {
+
+            }
+        };
+    }
+
+    }
+
+
 

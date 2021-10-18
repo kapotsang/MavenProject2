@@ -1,7 +1,7 @@
 package com.softwareinstitute.training.kptsang;
 
-public abstract class LibraryItem{
-
+public class LibraryItem{
+//abstract
     //attributes
     private String name;
     private int releaseYear;
@@ -11,9 +11,7 @@ public abstract class LibraryItem{
         this.name = name;
     }
 
-    public LibraryItem() {
 
-    }
 
     //methods
     public void setName(String name) {
