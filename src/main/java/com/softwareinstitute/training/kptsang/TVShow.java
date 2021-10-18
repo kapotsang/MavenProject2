@@ -11,17 +11,18 @@ public class TVShow extends com.softwareinstitute.training.kptsang.Disc implemen
         this.starring = starring;
     }
 
-
     public void setNumberOfEpisodes1(int NumberOfEpisodes){
         this.numberOfEpisodes = numberOfEpisodes;
     }
     public int getNumberOfEpisodes1(){
         return numberOfEpisodes;
     }
-
-    public void setStarring(String starring){this.starring = starring;}
-    public String getStarring(){return starring;}
-
+    public void setStarring(String starring){
+        this.starring = starring;
+    }
+    public String getStarring(){
+        return starring;
+    }
     @Override
     public void borrow() {
 

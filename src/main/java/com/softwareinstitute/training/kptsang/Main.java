@@ -1,8 +1,10 @@
 package com.softwareinstitute.training.kptsang;
-
+import java.util.ArrayList;
 public class Main{
 
     public static void main(String[] args){
+        ArrayList<Fiction> FictionLibrary =new ArrayList<>();
+        ArrayList<NonFiction> NonFictionLibrary = new ArrayList<>();
 
         com.softwareinstitute.training.kptsang.Fiction fiction = new com.softwareinstitute.training.kptsang.Fiction("Nineteen Eighty Four", "George Orwell", 328, "Dystopian");
         System.out.println("Title: "+ fiction.getName() +", written by " + fiction.getAuthor()+", "+fiction.getPages()+" pages, and this book is "+ fiction.getGenre());
@@ -22,7 +24,10 @@ public class Main{
         com.softwareinstitute.training.kptsang.TVShow tvshow = new com.softwareinstitute.training.kptsang.TVShow("Seinfeld", 8,180, "Jerry Seinfeld");
         System.out.println("Title: "+tvshow.getName()+", starring "+tvshow.getStarring()+", "+tvshow.getNoOfDiscs()+" disc boxset, "+tvshow.getNumberOfEpisodes1()+ " episodes");
 
-        //System.out.println(movie);
+
+        FictionLibrary.add(fiction1);
+        FictionLibrary.add(fiction);
+        NonFictionLibrary.add(nonfiction);
 
     }
 

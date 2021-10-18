@@ -1,6 +1,6 @@
 package com.softwareinstitute.training.kptsang;
 
-public class LibraryItem{
+public abstract class LibraryItem{
 
     //attributes
     private String name;
@@ -18,7 +18,6 @@ public class LibraryItem{
     //methods
     public void setName(String name) {
         this.name = name;
-        System.out.println("This entry's name is "+name);
     }
     public String getName(){
         return name;
