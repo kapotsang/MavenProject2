@@ -12,7 +12,7 @@ public class TVShow extends com.softwareinstitute.training.kptsang.Disc implemen
     }
 
     public void setNumberOfEpisodes1(int NumberOfEpisodes){
-        this.numberOfEpisodes = numberOfEpisodes;
+    //    this.numberOfEpisodes = numberOfEpisodes;
     }
     public int getNumberOfEpisodes1(){
         return numberOfEpisodes;
