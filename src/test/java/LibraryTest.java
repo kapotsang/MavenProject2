@@ -61,9 +61,16 @@ public class LibraryTest {
         assertEquals(testMovie.getRuntime(), runtime);
     }
     @Test
-    public void testNumberOfEpisodes1() {
+    public void testGetNumberOfEpisodes1() {
         TVShow testTVShow = new TVShow("Seinfeld", 8, 180, "Jerry Seinfeld");
         assertEquals("This isn't the right episode count", 180, testTVShow.getNumberOfEpisodes1());
+    }
+    @Test
+    public void testSetNumberOfEpisodes1(){
+        int episodeNo = 180;
+        TVShow testTVShow = new TVShow("Seinfeld", 8, 180, "Jerry Seinfeld");
+        testTVShow.setNumberOfEpisodes1(180);
+        assertEquals(testTVShow.getNumberOfEpisodes1(), episodeNo);
     }
     @Test
     public void testGetAuthor() {
@@ -77,47 +84,72 @@ public class LibraryTest {
         testFiction.setAuthor("John Steinbeck");
         assertEquals(testFiction.getAuthor(), author);
     }
-
     @Test
-    public void testName() {
+    public void testGetName() {
         Fiction testFiction = new Fiction("Of Mice and Men", "John Steinbeck", 107, "tragedy");
         assertEquals("This isn't the right title", "Of Mice and Men", testFiction.getName());
-
+    }
+    @Test
+    public void testSetName(){
+        String name = "Of Mice and Men";
+        Fiction newFiction = new Fiction("Of Mice and Men", "John Steinbeck", 107, "tragedy");
+        newFiction.setName("Of Mice and Men");
+        assertEquals(newFiction.getName(), name);
     }
 
     @Test
-    public void testPages() {
+    public void testGetPages() {
         Fiction testFiction = new Fiction("Of Mice and Men", "John Steinbeck", 107, "tragedy");
         assertEquals("This isn't the correct page count", 107, testFiction.getPages());
     }
 
     @Test
-    public void testNoOfDiscs() {
-        Disc testDisc = new Disc("Blue Planet", 4);
-        assertEquals("This is the wrong number of discs", 4, testDisc.getNoOfDiscs());
+    public void testSetPages(){
+        int pages = 107;
+        Fiction newFiction = new Fiction("Of Mice and Men", "John Steinbeck", 107, "tragedy");
+        newFiction.setPages(107);
+        assertEquals(newFiction.getPages(), pages);
+
     }
 
     @Test
-    public void testReleaseDate() {
+    public void testGetNoOfDiscs() {
+        Disc testDisc = new Disc("Blue Planet", 4);
+        assertEquals("This is the wrong number of discs", 4, testDisc.getNoOfDiscs());
+    }
+    @Test
+    public void testSetNoOfDiscs(){
+        int NoOfDiscs = 4;
+        Disc testDisc = new Disc("Blue Planet", 4);
+        testDisc.setNoOfDiscs(4);
+    assertEquals(testDisc.getNoOfDiscs(), NoOfDiscs);
+    }
+
+    @Test
+    public void testGetReleaseDate() {
         Movie testMovie = new Movie("Hereditary", 1, "Ari Aster", 127, 2018);
         assertEquals("This isn't the release date", 2018, testMovie.getReleaseYear());
     }
 
     @Test
+    public void testSetReleaseDate(){
+        int releaseYear = 2018;
+        Movie testMovie = new Movie("Hereditary", 1, "Ari Aster", 127, 2018);
+        testMovie.setReleaseYear(2018);
+        assertEquals(testMovie.getReleaseYear(), releaseYear);
+    }
+    @Test
     public void testGetStarring() {
         TVShow testTVShow = new TVShow("Seinfeld", 8, 180, "Jerry Seinfeld");
         assertEquals("This person isn't in this series", "Jerry Seinfeld", testTVShow.getStarring());
     }
-
     @Test
     public void testSetStarring() {
         String starring = "Jerry Seinfeld";
         TVShow tvshow = new TVShow("Seinfeld", 8, 180, "Jerry Seinfeld");
         tvshow.setStarring("Jerry Seinfeld");
         assertEquals(tvshow.getStarring(), starring);
-
     }
-
     @Test
     public void testBorrow() {
         Availability testAvailability = new Availability() {
