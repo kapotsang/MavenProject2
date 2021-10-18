@@ -5,39 +5,77 @@ import static org.junit.Assert.assertEquals;
 public class LibraryTest {
 
     @Test
-    public void testGenreMethod() {
+    public void testGetGenreMethod() {
         Fiction testFiction = new Fiction("Nineteen Eighty Four", "George Orwell", 328, "Dystopian");
         assertEquals("This genre is not correct", "Dystopian", testFiction.getGenre());
     }
 
     @Test
-    public void testTopicMethod() {
+    public void testSetGenreMethod() {
+        String genre = "Dystopian";
+        Fiction testFiction = new Fiction("Nineteen Eighty Four", "George Orwell", 328, "Dystopian");
+        testFiction.setGenre("Dystopian");
+        assertEquals(testFiction.getGenre(), genre);
+    }
+
+    @Test
+    public void testGetTopicMethod() {
         NonFiction testNonFiction = new NonFiction("LEGO Star Wars Visual Dictionary", "DK", 160, "Lego");
         assertEquals("This topic isn't correct", "Lego", testNonFiction.getTopic());
     }
 
     @Test
-    public void testDirectorMethod() {
+    public void testSetTopicMethod() {
+        String topic = "Lego";
+        NonFiction testNonFiction = new NonFiction("LEGO Star Wars Visual Dictionary", "DK", 160, "Lego");
+        testNonFiction.setTopic("Lego");
+        assertEquals(testNonFiction.getTopic(), topic);
+    }
+
+    @Test
+    public void testGetDirectorMethod() {
         Movie testMovie = new Movie("Kill Bill", 2, "Quentin Tarantino", 215, 2004);
         assertEquals("This isn't the right director", "Quentin Tarantino", testMovie.getDirector());
     }
 
     @Test
-    public void testRuntimeMethod() {
+    public void testSetDirectorMethod() {
+        String director = "Quentin Tarantino";
+        Movie testMovie = new Movie("Kill Bill", 2, "Quentin Tarantino", 215, 2004);
+        testMovie.setDirector("Quentin Tarantino");
+        assertEquals(testMovie.getDirector(), director);
+
+    }
+
+    @Test
+    public void testGetRuntimeMethod() {
         Movie testMovie = new Movie("Kill Bill", 2, "Quentin Tarantino", 215, 2004);
         assertEquals("This runtime is wrong", 215, testMovie.getRuntime());
     }
 
     @Test
+    public void testSetRuntimeMethod() {
+        int runtime = 215;
+        Movie testMovie = new Movie("Kill Bill", 2, "Quentin Tarantino", 215, 2004);
+        testMovie.setRuntime(215);
+        assertEquals(testMovie.getRuntime(), runtime);
+    }
+    @Test
     public void testNumberOfEpisodes1() {
         TVShow testTVShow = new TVShow("Seinfeld", 8, 180, "Jerry Seinfeld");
         assertEquals("This isn't the right episode count", 180, testTVShow.getNumberOfEpisodes1());
     }
-
     @Test
-    public void testAuthor() {
+    public void testGetAuthor() {
         Fiction testFiction = new Fiction("Of Mice and Men", "John Steinbeck", 107, "period");
         assertEquals("This isn't the right author", "John Steinbeck", testFiction.getAuthor());
+    }
+    @Test
+    public void testSetAuthor(){
+        String author = "John Steinbeck";
+        Fiction testFiction = new Fiction("Of Mice and Men", "John Steinbeck", 107, "period");
+        testFiction.setAuthor("John Steinbeck");
+        assertEquals(testFiction.getAuthor(), author);
     }
 
     @Test
@@ -66,9 +104,18 @@ public class LibraryTest {
     }
 
     @Test
-    public void testStarring() {
+    public void testGetStarring() {
         TVShow testTVShow = new TVShow("Seinfeld", 8, 180, "Jerry Seinfeld");
         assertEquals("This person isn't in this series", "Jerry Seinfeld", testTVShow.getStarring());
+    }
+
+    @Test
+    public void testSetStarring() {
+        String starring = "Jerry Seinfeld";
+        TVShow tvshow = new TVShow("Seinfeld", 8, 180, "Jerry Seinfeld");
+        tvshow.setStarring("Jerry Seinfeld");
+        assertEquals(tvshow.getStarring(), starring);
+
     }
 
     @Test
@@ -79,17 +126,9 @@ public class LibraryTest {
 
             }
         };
+
     }
-
 }
-
-
-    //@Test
-    //public void testStarring(){
-       // TVShow testTVShow = new TVShow("Seinfeld", 8, 180, "Jerry Seinfeld");
-      //  assertEquals("This person isn't in this series", "Jerry Seinfeld", testTVShow.getStarring());
-
-    //}
 
 
 
