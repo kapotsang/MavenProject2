@@ -12,6 +12,8 @@ import static org.junit.Assert.assertEquals;
         private String actualAnswerAuthor;
         private String Topic;
         private String actualAnswerTopic;
+        private int PageCount;
+        private String actualPagecount;
 
         @Given("Genre is Horror")
         public void genre_is_Horror() {Genre = "Horror";}
@@ -48,7 +50,14 @@ import static org.junit.Assert.assertEquals;
         @Then("the answer is no")
         public void i_should_be_told_no_topic(){}
 
+  /*      @Given("Page count is 200")
+        public void page_count(){ PageCount = 200 ;}
+        @When("I ask if the page count is 200")
+        public void i_ask_if_pageCount(){actualPagecount = WhatPageCount.whatPageCount(PageCount);}
+        @Then("the answer is yes")
+        public void pageCountIs(){}
 
+*/
 
 
     }
