@@ -1,3 +1,5 @@
+package MavenProject2;
+
 import com.softwareinstitute.training.kptsang.*;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;

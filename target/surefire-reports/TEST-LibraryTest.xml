@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="12" failures="0" name="LibraryTest" time="0.046" errors="0" skipped="0">
+<testsuite tests="23" failures="0" name="LibraryTest" time="0.03" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17+35-LTS-2724"/>
@@ -43,7 +43,7 @@
     <property name="java.class.path" value="C:\Program Files\apache-maven-3.8.3\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -61,16 +61,27 @@
     <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="LibraryTest" name="testGenreMethod" time="0.016"/>
-  <testcase classname="LibraryTest" name="testNumberOfEpisodes1" time="0.005"/>
-  <testcase classname="LibraryTest" name="testTopicMethod" time="0"/>
-  <testcase classname="LibraryTest" name="testDirectorMethod" time="0.024"/>
-  <testcase classname="LibraryTest" name="testPages" time="0"/>
-  <testcase classname="LibraryTest" name="testName" time="0"/>
-  <testcase classname="LibraryTest" name="testReleaseDate" time="0.001"/>
-  <testcase classname="LibraryTest" name="testNoOfDiscs" time="0"/>
-  <testcase classname="LibraryTest" name="testAuthor" time="0"/>
-  <testcase classname="LibraryTest" name="testBorrow" time="0"/>
-  <testcase classname="LibraryTest" name="testRuntimeMethod" time="0"/>
-  <testcase classname="LibraryTest" name="testStarring" time="0"/>
+  <testcase classname="LibraryTest" name="testGetReleaseDate" time="0.014"/>
+  <testcase classname="LibraryTest" name="testSetStarring" time="0"/>
+  <testcase classname="LibraryTest" name="testGetPages" time="0.007"/>
+  <testcase classname="LibraryTest" name="testGetStarring" time="0"/>
+  <testcase classname="LibraryTest" name="testSetGenreMethod" time="0"/>
+  <testcase classname="LibraryTest" name="testGetName" time="0"/>
+  <testcase classname="LibraryTest" name="testSetRuntimeMethod" time="0"/>
+  <testcase classname="LibraryTest" name="testSetTopicMethod" time="0.002"/>
+  <testcase classname="LibraryTest" name="testGetNoOfDiscs" time="0"/>
+  <testcase classname="LibraryTest" name="testSetNumberOfEpisodes1" time="0"/>
+  <testcase classname="LibraryTest" name="testGetNumberOfEpisodes1" time="0"/>
+  <testcase classname="LibraryTest" name="testSetAuthor" time="0"/>
+  <testcase classname="LibraryTest" name="testSetReleaseDate" time="0"/>
+  <testcase classname="LibraryTest" name="testSetDirectorMethod" time="0"/>
+  <testcase classname="LibraryTest" name="testGetGenreMethod" time="0"/>
+  <testcase classname="LibraryTest" name="testGetAuthor" time="0.001"/>
+  <testcase classname="LibraryTest" name="testBorrow" time="0.002"/>
+  <testcase classname="LibraryTest" name="testGetRuntimeMethod" time="0.001"/>
+  <testcase classname="LibraryTest" name="testSetNoOfDiscs" time="0.003"/>
+  <testcase classname="LibraryTest" name="testSetName" time="0"/>
+  <testcase classname="LibraryTest" name="testGetTopicMethod" time="0"/>
+  <testcase classname="LibraryTest" name="testGetDirectorMethod" time="0"/>
+  <testcase classname="LibraryTest" name="testSetPages" time="0"/>
 </testsuite>
